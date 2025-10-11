@@ -7,7 +7,7 @@ const DashboardLayout = () => {
         <main className='md:flex md:flex-row'>
             <MobileSidebar />
             <Sidebar />
-            <aside className='py-4 px-8'>
+            <aside className='py-4 px-9'>
                 <Outlet />
             </aside>
         </main>

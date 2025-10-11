@@ -1,8 +1,14 @@
+import { Header } from 'components'
 import React from 'react'
 
 const Inventory = () => {
     return (
-        <div>InventoryPage</div>
+        <section>
+            <Header title='Inventory' description='View inventory stats' />
+            <p>
+                InventoryPage content
+            </p>
+        </section>
     )
 }
 
