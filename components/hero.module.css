@@ -1,0 +1,12 @@
+.heroBg {
+	background: url("https://www.uscold.com/wp-content/uploads/2025/07/Hebron-Indiana-Bill-Henderson-scaled.png")
+		no-repeat center center;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	opacity: 0.8;
+}
+
+.heroCta {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

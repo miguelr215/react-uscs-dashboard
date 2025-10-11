@@ -3,7 +3,8 @@ const DidNotFind = () => {
     return (
         <div>
             <div>
-                some icon            </div>
+                <i className="bi bi-emoji-frown-fill"></i>
+            </div>
             <p>
                 Sorry, we couldn't find that page.
             </p>
