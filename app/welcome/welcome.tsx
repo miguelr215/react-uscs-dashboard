@@ -1,6 +1,5 @@
 import logoDark from "./logo-dark.svg";
 import logoLight from "./logo-light.svg";
-import { FaBeer } from "react-icons/fa";
 
 export function Welcome() {
   return (
@@ -21,7 +20,7 @@ export function Welcome() {
           </div>
         </header>
         <div>
-          beer is good <FaBeer />
+          beer is good <i className="bi bi-airplane-fill"></i>
         </div>
         <div className="max-w-[300px] w-full space-y-6 px-4">
           <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">

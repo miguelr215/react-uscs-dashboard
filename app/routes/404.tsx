@@ -1,6 +1,13 @@
+
 const DidNotFind = () => {
     return (
-        <div>Sorry, we couldn't find that page.</div>
+        <div>
+            <div>
+                some icon            </div>
+            <p>
+                Sorry, we couldn't find that page.
+            </p>
+        </div>
     )
 }
 
