@@ -1,12 +1,15 @@
 import React from 'react'
-import MobileSidebar from 'components/MobileSidebar'
+import { MobileSidebar, Sidebar } from 'components'
 import { Outlet } from 'react-router'
 
 const DashboardLayout = () => {
     return (
-        <main>
+        <main className='md:flex md:flex-row'>
             <MobileSidebar />
-            <Outlet />
+            <Sidebar />
+            <aside className='py-4 px-8'>
+                <Outlet />
+            </aside>
         </main>
     )
 }

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { Link } from "react-router"
+import LogoLink from "./LogoLink";
 
 const MobileSidebar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -7,10 +8,8 @@ const MobileSidebar = () => {
     return (
         <>
             <div className="mobile-sidebar md:hidden">
-                <header className="flex justify-between items-center p-4">
-                    <Link to="/" className="max-w-[125px]">
-                        <img src="https://www.uscold.com/wp-content/uploads/2023/07/USCS_Logo_Horizontal_Email.png" alt="US Cold Storage logo" />
-                    </Link>
+                <header className="flex justify-between items-center p-4 border-b border-gray-300">
+                    <LogoLink />
                     <button type="button" className="text-2xl cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                         <i className="bi bi-list"></i>
                     </button>
