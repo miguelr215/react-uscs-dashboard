@@ -1,11 +1,11 @@
 import { createContext } from "react";
 
-interface InventoryByMonthType {
+export interface InventoryByMonthType {
 	month: string;
 	amount: number;
 }
 
-interface SalesType {
+export interface SalesType {
 	month: string;
 	amount: number;
 	revenue: number;
