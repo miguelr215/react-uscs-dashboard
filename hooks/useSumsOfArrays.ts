@@ -5,6 +5,6 @@ export function useSumsOfArrays(arrays: number[][]): number[] {
 	const result = arrays.reduce((sum, arr) =>
 		sum.map((num, i) => num + (arr[i] ?? 0))
 	);
-	console.log("result:", result);
+	// console.log("result:", result);
 	return result;
 }

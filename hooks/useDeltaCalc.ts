@@ -5,6 +5,6 @@ export function useDeltaCalc(array: number[]): number[] {
 		.slice(1)
 		.map((num, i) => ((num - array[i]) / array[i]) * 100);
 	deltas.unshift(0); // Add a zero at the start to maintain the same length
-	console.log("deltas:", deltas);
+	// console.log("deltas:", deltas);
 	return deltas;
 }

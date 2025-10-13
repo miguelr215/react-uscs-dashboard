@@ -35,6 +35,6 @@ export function useLineChartFormat(chartLabel: string, chartData: number[]) {
 		],
 	};
 
-	console.log("data:", data);
+	// console.log("data:", data);
 	return data;
 }
