@@ -5,7 +5,7 @@ import SidebarFooter from './SidebarFooter'
 
 const Sidebar = () => {
     return (
-        <aside className='w-full max-w-[13rem] h-screen shadow-2xl shadow-gray-500 hidden md:block'>
+        <aside className='fixed w-full max-w-[13rem] h-screen shadow-2xl shadow-gray-500 hidden md:block'>
             <div className={`flex flex-col justify-between h-screen w-52 bg-gray-200 z-50`}>
                 <nav className="flex flex-col p-4 gap-4">
                     <LogoLink />
