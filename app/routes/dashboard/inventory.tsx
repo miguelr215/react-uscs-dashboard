@@ -1,4 +1,4 @@
-import { Header, LoadingSpinner } from 'components'
+import { CategoryFilter, Header, LoadingSpinner } from 'components'
 import { useData } from 'hooks/useData'
 import React from 'react'
 
@@ -11,6 +11,9 @@ const Inventory = () => {
     return (
         <section>
             <Header title='Inventory' description='View inventory stats' />
+
+            <CategoryFilter />
+
             <p>
                 InventoryPage content
 

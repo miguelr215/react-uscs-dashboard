@@ -7,8 +7,8 @@ import { fetchProducts } from "services/apiClient";
 
 export const DashboardProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
     const [products, setProducts] = useState<ProductType[]>([]);
-    const [categories, setCategories] = useState<string[]>([]);
-    const [currentCategory, setCurrentCategory] = useState("all");
+    const [categories, setCategories] = useState<string[]>(["All"]);
+    const [currentCategory, setCurrentCategory] = useState("All");
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
 
@@ -22,7 +22,7 @@ export const DashboardProvider: React.FC<{ children: ReactNode }> = ({ children 
         try {
             const data = await fetchProducts();
             setProducts(data.products);
-            setCategories(data.categories);
+            setCategories(prevState => [...prevState, ...data.categories]);
         } catch (error) {
             setError(error instanceof Error ? error.message : "Unknown error");
         } finally {

@@ -36,7 +36,7 @@ export interface DashboardContextType {
 export const defaultDashboardContext: DashboardContextType = {
 	products: [],
 	categories: [],
-	currentCategory: "all",
+	currentCategory: "All",
 	loading: false,
 	error: null,
 	changeCurrentCategory: () => {},
