@@ -5,7 +5,7 @@ const CategoryFilter = () => {
     const { categories, currentCategory, changeCurrentCategory } = useData();
 
     return (
-        <div className='mb-4 md:mb-5'>
+        <div className='mb-4 md:mb-6'>
             <p className='text-xs text-gray-500 mb-1 md:mb-2'>Filter by category:</p>
             <ul className='flex flex-wrap gap-4 md:gap-5'>
                 {categories.map((category) => (
