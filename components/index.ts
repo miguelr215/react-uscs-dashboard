@@ -5,3 +5,4 @@ export { default as MobileSidebar } from "./MobileSidebar";
 export { default as Sidebar } from "./Sidebar";
 export { default as SidebarFooter } from "./SidebarFooter";
 export { default as Header } from "./Header";
+export { default as CategoryFilter } from "./CategoryFilter";

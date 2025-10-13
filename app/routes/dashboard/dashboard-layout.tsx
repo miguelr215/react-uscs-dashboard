@@ -1,8 +1,8 @@
-import React from 'react'
-import { MobileSidebar, Sidebar } from 'components'
 import { Outlet } from 'react-router'
+import { LoadingSpinner, MobileSidebar, Sidebar } from 'components'
 
 const DashboardLayout = () => {
+
     return (
         <main className='md:flex md:flex-row'>
             <MobileSidebar />
