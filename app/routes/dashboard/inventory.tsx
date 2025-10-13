@@ -35,7 +35,7 @@ const Inventory = () => {
                         <LineChart data={chartData} />
                     </div>
                 ) : (
-                    <p>Preparing chart...</p>
+                    <LoadingSpinner />
                 )}
 
                 <p>month to month change rate - line</p>
