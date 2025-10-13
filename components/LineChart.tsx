@@ -10,7 +10,7 @@ import {
     Legend,
 } from 'chart.js';
 import { Line } from 'react-chartjs-2';
-import type { ChartDataType } from 'hooks/useChartFormat';
+import type { LineChartDataType } from 'hooks/useLineChartFormat';
 
 ChartJS.register(
     CategoryScale,
@@ -36,7 +36,7 @@ ChartJS.register(
 // };
 
 
-const LineChart = ({ data }: { data: ChartDataType }) => {
+const LineChart = ({ data }: { data: LineChartDataType }) => {
     return (
         <div>
             <Line data={data} />

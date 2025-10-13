@@ -1,4 +1,4 @@
-export interface ChartDataType {
+export interface LineChartDataType {
 	labels: string[];
 	datasets: {
 		label: string;
@@ -8,7 +8,7 @@ export interface ChartDataType {
 	}[];
 }
 
-export function useChartFormat(chartLabel: string, chartData: number[]) {
+export function useLineChartFormat(chartLabel: string, chartData: number[]) {
 	const labels = [
 		"January",
 		"February",
