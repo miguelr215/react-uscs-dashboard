@@ -43,7 +43,7 @@ const Sales = () => {
 
     return (
         <section>
-            <Header title='Sales' description='View Sales & Revenue stats' />
+            <Header title='Sales' description='View Sales & Revenue stats to understand your financial situation' />
             <CategoryFilter />
             <div className='flex flex-col gap-6 items-center lg:flex-row'>
                 {/* Doughnut chart */}

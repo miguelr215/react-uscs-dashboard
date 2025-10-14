@@ -41,7 +41,7 @@ const Dashboard = () => {
 
     return (
         <section>
-            <Header title="Dashboard" description="View popular Dashboards" />
+            <Header title="Dashboard" description="View Popular Inventory & Sales Dashboards" />
             <CategoryFilter />
             <div className='flex flex-col gap-6 items-center lg:flex-row'>
                 {/* Doughnut chart */}

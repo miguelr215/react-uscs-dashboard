@@ -9,14 +9,14 @@ const Sidebar = () => {
             <div className={`flex flex-col justify-between h-screen w-52 bg-gray-200 z-50`}>
                 <nav className="flex flex-col p-4 gap-4">
                     <LogoLink />
-                    <Link to="/dashboard" className="db-nav-btn">
+                    <Link to="/dashboard" className="db-nav-btn" aria-description='Go to Main Dashboard page'>
                         <i className="bi bi-bar-chart-fill"></i> Dashboard
                     </Link>
-                    <Link to="/dashboard/inventory" className="db-nav-btn">
+                    <Link to="/dashboard/inventory" className="db-nav-btn" aria-description='Go to Inventory Dashboard page'>
                         <i className="bi bi-boxes"></i>
                         Inventory
                     </Link>
-                    <Link to="/dashboard/sales" className="db-nav-btn">
+                    <Link to="/dashboard/sales" className="db-nav-btn" aria-description='Go to Sales Dashboard page'>
                         <i className="bi bi-piggy-bank-fill"></i>
                         Sales
                     </Link>

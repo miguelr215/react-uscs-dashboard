@@ -11,8 +11,10 @@ const CategoryFilter = () => {
                 {categories.map((category) => (
                     <li key={category}>
                         <button
+                            type='button'
                             onClick={() => changeCurrentCategory(category)}
                             className={`db-cat-btn ${currentCategory === category ? 'font-bold' : ''}`}
+                            aria-description={`Button to filter by ${category}`}
                         >
                             {category}
                         </button>
