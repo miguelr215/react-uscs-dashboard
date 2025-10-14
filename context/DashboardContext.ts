@@ -20,7 +20,7 @@ export interface ProductType {
 	inStock: boolean;
 	quantity: number;
 	inventoryByMonth: InventoryByMonthType[];
-	sale: SalesType[];
+	sales: SalesType[];
 }
 
 export interface DashboardContextType {
