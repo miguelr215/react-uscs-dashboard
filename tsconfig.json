@@ -23,5 +23,6 @@
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"strict": false
-	}
+	},
+	"base": "/react-uscs-dashboard"
 }
