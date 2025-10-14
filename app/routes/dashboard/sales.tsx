@@ -44,7 +44,6 @@ const Sales = () => {
     return (
         <section>
             <Header title='Sales' description='View Sales & Revenue stats' />
-
             <CategoryFilter />
             <div className='flex flex-col gap-6 items-center lg:flex-row'>
                 {/* Doughnut chart */}

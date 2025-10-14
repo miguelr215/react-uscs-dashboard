@@ -42,9 +42,7 @@ const Inventory = () => {
     return (
         <section>
             <Header title='Inventory' description='View inventory stats to make informed decisions' />
-
             <CategoryFilter />
-
             <div className='flex flex-col gap-6 items-center lg:flex-row'>
                 {/* Doughnut chart */}
                 {doughnutChartData ? (
