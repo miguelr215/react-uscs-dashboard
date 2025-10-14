@@ -1,8 +1,6 @@
 // custom hook that returns either total quantity per category or total quantity per product in category
 // eg. [product1, product2] => [total1, total2] for categories or products
 
-import type { ProductType } from "context/DashboardContext";
-
 type Product = {
 	category: string;
 	name: string;
@@ -20,7 +18,7 @@ export function useDoughnutData(products: Product[], currentCategory: string) {
 				(categoryMap.get(product.category) || 0) + product.quantity
 			);
 		});
-		console.log("doughnut categoryMap for All:", categoryMap);
+		// console.log("doughnut categoryMap for All:", categoryMap);
 		return Array.from(categoryMap.values());
 	} else {
 		// calculate total per product in category, return object with product names and totals
@@ -32,11 +30,11 @@ export function useDoughnutData(products: Product[], currentCategory: string) {
 				);
 			}
 		});
-		console.log("doughnut categoryMap for categories:", categoryMap);
-		console.log(
-			"doughnut categoryMap values:",
-			Array.from(categoryMap.values())
-		);
+		// console.log("doughnut categoryMap for categories:", categoryMap);
+		// console.log(
+		// 	"doughnut categoryMap values:",
+		// 	Array.from(categoryMap.values())
+		// );
 		return Array.from(categoryMap.values());
 	}
 }

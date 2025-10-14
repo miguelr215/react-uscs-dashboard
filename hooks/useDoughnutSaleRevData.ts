@@ -1,8 +1,6 @@
 // custom hook that returns either total sales revenue per category or total sales revenue per product in category
 // eg. [product1, product2] => [total1, total2] for categories or products
 
-import type { ProductType } from "context/DashboardContext";
-
 type Product = {
 	category: string;
 	name: string;
@@ -27,7 +25,7 @@ export function useDoughnutSaleRevData(
 				(categoryMap.get(product.category) || 0) + totalRev
 			);
 		});
-		console.log("doughnut categoryMap for All:", categoryMap);
+		// console.log("doughnut categoryMap for All:", categoryMap);
 		return Array.from(categoryMap.values());
 	} else {
 		// calculate total per product in category, return object with product names and totals
@@ -43,14 +41,14 @@ export function useDoughnutSaleRevData(
 				);
 			}
 		});
-		console.log(
-			"sales rev doughnut categoryMap for categories:",
-			categoryMap
-		);
-		console.log(
-			"sales rev doughnut categoryMap values:",
-			Array.from(categoryMap.values())
-		);
+		// console.log(
+		// 	"sales rev doughnut categoryMap for categories:",
+		// 	categoryMap
+		// );
+		// console.log(
+		// 	"sales rev doughnut categoryMap values:",
+		// 	Array.from(categoryMap.values())
+		// );
 		return Array.from(categoryMap.values());
 	}
 }
