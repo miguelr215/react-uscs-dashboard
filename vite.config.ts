@@ -4,5 +4,6 @@ import { defineConfig } from "vite";
 import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
-  plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
+	base: "react-uscs-dashboard",
+	plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
 });
