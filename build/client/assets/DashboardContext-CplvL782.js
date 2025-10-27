@@ -1,0 +1,1 @@
+import{a as r}from"./chunk-OIYGIGL5-CMUvuLFw.js";const t={products:[],categories:[],currentCategory:"All",loading:!1,error:null,changeCurrentCategory:()=>{},refresh:async()=>{}},a=r.createContext(t);export{a as D};

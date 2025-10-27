@@ -1,0 +1,1 @@
+function r(t,n){const e=new Map;return n==="All"?(t.forEach(a=>{e.set(a.category,(e.get(a.category)||0)+a.quantity)}),Array.from(e.values())):(t.forEach(a=>{a.category===n&&e.set(a.name,(e.get(a.name)||0)+a.quantity)}),Array.from(e.values()))}export{r as u};
