@@ -41,6 +41,7 @@ const Sales = () => {
     if (loading) return <LoadingSpinner />
     if (error) return <p className='text-red-500'>Error: {error}</p>
 
+
     return (
         <section>
             <Header title='Sales' description='View Sales & Revenue stats to understand your financial situation' />
